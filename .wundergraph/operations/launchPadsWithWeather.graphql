@@ -1,0 +1,45 @@
+query launchPadsWithWeather($region: String! @internal) {
+  spacex_launchpads {
+    id
+    successful_launches
+    attempted_launches
+    location {
+      region @export(as: "region")
+      name
+    }
+    _join {
+      weather_getCityByName(name: $region) {
+        id
+        name
+        country
+        coord {
+          lon
+          lat
+        }
+        weather {
+          summary {
+            title
+            description
+            icon
+          }
+          temperature {
+            actual
+            feelsLike
+            min
+            max
+          }
+          wind {
+            speed
+            deg
+          }
+          clouds {
+            all
+            visibility
+            humidity
+          }
+          timestamp
+        }
+      }
+    }
+  }
+}
