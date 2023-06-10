@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Islands Architecture</title>
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/reveal.css" />
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.5.0/dist/theme/black.css" />
+    <title>BFF with WunderGraph</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/reveal.js@4.5.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/reveal.js@4.5.0/dist/theme/black.css"
+    />
   </head>
   <body>
     <div class="reveal">
@@ -14,112 +20,96 @@
         <section>How to build Backend For Frontend with WunderGraph!</section>
         <section data-auto-animate>
           <span>Traditional Web Application</span>
-          <img src="./assets/trad-server.png"/>
+          <img src="./assets/trad-server.png" />
         </section>
         <section>
           <p>Projects get complex & teams grow</p>
         </section>
         <section>
-        <section>
-          <h2>Modern Tech Stack</h2>
-          <img src="./assets/modern-stack.png"/>
-          <br/>
-          <span style="font-size: xx-small;">Image Credits: <a href="https://www.youtube.com/watch?v=Sxxw3qtb3_g">FireShip How to OVER Engineer a Website</a></span>
-          </section>
           <section>
-            <h2>API Layer</h2>
-            <img src="./assets/api-layer.png"/>
-            <br/>
-            <span style="font-size: xx-small;">Image Credits: <a href="https://www.youtube.com/watch?v=Sxxw3qtb3_g">FireShip How to OVER Engineer a Website</a></span>
-          </section>
-        </section>
-        <section>
-          <section>
-            React introduced two important things:
-            <ul>
-              <li>UI Reactivity</li>
-              <li>Component Driven Development</li>
-            </ul>
-          </section>
-          <section>Making the UI react to states</section>
-          <section>Era of SPA</section>
-          <section>
-            New generation of SPA friendly frameworks
-            <ul>
-              <li>React Router</li>
-              <li>Next.js</li>
-              <li>Gatsby</li>
-              <li>React Query</li>
-              <li>Blitz</li>
-            </ul>
-          </section>
-          <section>Somehow the web got slow in the SPA age...</section>
-        </section>
-        <section>
-          <section>
-            Let's take a look at the app built with Next.js<br />
-            <a href="https://islands-experiment.vercel.app/" target="_blank"
-              >Tools App</a
+            <h2>Modern Tech Stack</h2>
+            <img src="./assets/modern-stack.png" />
+            <br />
+            <span style="font-size: xx-small"
+              >Image Credits:
+              <a href="https://www.youtube.com/watch?v=Sxxw3qtb3_g"
+                >FireShip How to OVER Engineer a Website</a
+              ></span
             >
           </section>
           <section>
-            Lets say on average our code has 50 characters in a line 
-          </section>
-          <section>
-            1 kb = 20 lines (approx)
-        </section>
-        <section>
-            The app is 100kb => browser has executed 2000 lines of JavaScript
-            </section>
-            <section>
-            Let's review a JS heavy app: <a href="https://docs.new/" target="_blank">Google Docs</a>
-            </section>
-            <section>
-            Let's review the experiment app: <a href="http://localhost:3000/" target="_blank">Localhost</a>
-            </section>
+            <h2>API Layer</h2>
+            <img src="./assets/api-layer.png" />
+            <br />
+            <span style="font-size: xx-small"
+              >Image Credits:
+              <a href="https://www.youtube.com/watch?v=Sxxw3qtb3_g"
+                >FireShip How to OVER Engineer a Website</a
+              ></span
+            >
           </section>
         </section>
         <section>
           <section>
-            What if we built the webpage with HTML?
+            Traditional Server
+            <img src="./assets/trad-server.png" />
           </section>
           <section>
-            Same app but built with HTML: <br/><a href="https://islands-experiment-html.vercel.app/" target="_blank">Tools</a>
+            Microservices
+            <img src="./assets/micro services.png" />
+          </section>
+          <section>
+            <img src="./assets/api-arch.png" />
+          </section>
+          <section>
+            Service Dependencies
+            <img src="./assets/service-deps.png" />
+          </section>
+          <section>
+            Usual Situation
+            <img src="./assets/service-deps-code.png" />
+          </section>
+          <section>
+            More Front-ends!
+            <img src="./assets/service-dep-apps.png" />
+          </section>
+          <section>
+            Actual Complexity
+            <img src="./assets/service-deps-auth.png" />
           </section>
         </section>
         <section>
-          Behold! the next generation of Frontend Frameworks!<br/>
-
-          <ul>
-            <li>Astro</li>
-            <li>Next.js 13</li>
-            <li>Fresh</li>
-            <li>Is-land by 11ty</li>
-          </ul>
+          <section>
+            Enter
+            <a href="https://wundergraph.com/" target="_blank">WunderGraph!</a>
+          </section>
+          <section>
+            Lets combine two APIs
+            <ul>
+              <li>
+                <a href="https://spacex-api.fly.dev/graphql/">SpaceX GraphQL</a>
+              </li>
+              <li>
+                <a href="https://bevel-wiggly-snapper.glitch.me/">Weather</a>
+              </li>
+            </ul>
+          </section>
         </section>
-        <section>
-          All of them support the new Islands Architecture
-        </section>
-        <section>
-          Same app but built with Astro: <br/>
-          <a href="https://islands-experiment-dusky.vercel.app/" target="_blank">Tools</a>
-        </section>
-        <section>
-          Questions?
-        </section>
-        <section>
-          We are hiring!<br/>
-          hiring@oslash.com<br/>
-          oslash.com/careers
-        </section>
+        <section>Questions?</section>
         <section>
           Thank You!
-          <br/>
-          Twitter: @dani_akash_
+          <br />
+          <br />
+          <br />
+          Twitter:
+          <br />
+          <ul>
+            <li>@dani_akash_</li>
+            <li>@wundergraphcom</li>
+          </ul>
         </section>
       </div>
     </div>
-
     <script src="https://unpkg.com/reveal.js@4.5.0/dist/reveal.js"></script>
     <script>
       Reveal.initialize({
